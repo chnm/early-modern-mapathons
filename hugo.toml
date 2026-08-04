@@ -1,0 +1,43 @@
+baseURL = "https://emm.rrchnm.org/"
+title = "Early Modern Mapathons"
+enableRobotsTXT = true
+
+# Clean, filename-based URLs (e.g. /tutorials/introduction-to-gis/).
+# Old WordPress date-based permalinks are preserved via per-post `aliases`.
+
+# No categories/tags on this site — skip the empty taxonomy pages.
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  tagline = "Team-Based GIS Training and Transformation of Seventeenth-Century Maps"
+  description = "Team-based GIS training and transformation of seventeenth-century maps, a 4-VA project of George Mason University and Virginia Tech."
+  email = "chnm@gmu.edu"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Mapathon Events"
+  url = "/mapathon-events/"
+  weight = 2
+
+[[menu.main]]
+  name = "Tutorials"
+  url = "/tutorials/"
+  weight = 3
+
+[[menu.main]]
+  name = "Resources"
+  url = "/gis-teaching-learning-resources/"
+  weight = 4
+
+[[menu.main]]
+  name = "Mapping Projects"
+  url = "/explore-early-modern-mapping-projects/"
+  weight = 5
+
+[markup.goldmark.renderer]
+  # Allow raw HTML in markdown (used sparingly for the team grid / figures).
+  unsafe = true

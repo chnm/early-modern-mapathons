@@ -1,0 +1,11 @@
+{
+  "name": "early-modern-mapathons",
+  "version": "1.0.0",
+  "description": "Early Modern Mapathons (emm.rrchnm.org) — Hugo static site.",
+  "private": true,
+  "license": "CC-BY-NC-SA-4.0",
+  "scripts": {
+    "build": "hugo --minify",
+    "dev": "hugo server -D"
+  }
+}

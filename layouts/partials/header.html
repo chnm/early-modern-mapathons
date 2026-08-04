@@ -1,0 +1,12 @@
+<header>
+  <a href="/"><img src="/images/emm-logo.svg" alt="Early Modern Mapathons" width="240"></a>
+  <p>{{ .Site.Params.tagline }}</p>
+  <nav aria-label="Main navigation">
+    <ul>
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>
+<hr>

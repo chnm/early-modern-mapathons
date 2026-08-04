@@ -1,0 +1,16 @@
+<hr>
+<footer>
+  <nav aria-label="Footer navigation">
+    <ul>
+      {{ range .Site.Menus.main }}<li><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
+    </ul>
+  </nav>
+  <p>Contact: <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+  <p>
+    Early Modern Mapathons is a project of George Mason University and Virginia Tech,
+    supported by a Virginia 4-VA grant, in affiliation with the
+    <a href="https://rrchnm.org/">Roy Rosenzweig Center for History and New Media</a>.
+    Results are shared under a
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license.
+  </p>
+</footer>

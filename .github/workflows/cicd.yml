@@ -119,7 +119,7 @@ jobs:
       release-tag-name-type: "iso"
 
       website-devl-fqdn: "emm.dev.chnm.gmu.edu"
-      website-prod-fqdn: "emm.rrchnm.org"
+      website-prod-fqdn: "emm.dev.chnm.gmu.edu"
 
   deploy:
     uses: chnm/.github/.github/workflows/docker--deploy.yml@main
@@ -127,4 +127,4 @@ jobs:
     secrets: inherit
     with:
       website-devl-fqdn: "emm.dev.chnm.gmu.edu"
-      website-prod-fqdn: "emm.rrchnm.org"
+      website-prod-fqdn: "emm.dev.chnm.gmu.edu"

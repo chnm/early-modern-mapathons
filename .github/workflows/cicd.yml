@@ -102,29 +102,29 @@ jobs:
               f.write(f"has_new={'true' if newly_publishable else 'false'}\n")
           PY
 
-  build-release:
+  hugo-build-release-deploy:
     needs: check
     if: needs.check.outputs.has_new == 'true'
-    uses: chnm/.github/.github/workflows/hugo--build-release.yml@main
+    uses: chnm/.github/.github/workflows/hugo--build-release-deploy.yml@main
     secrets: inherit
     with:
+      runner_labels: '["self-hosted","IncusOS"]'
       container-registry: "ghcr.io"
       container-image-name: "emm-website"
+
+      # This repo is a single Hugo site at the root (not a monorepo subdir),
+      # so the build context is the repository root.
       hugo-context-root: "."
-      hugo-content-path: "/srv"
       hugo-devl-url: "https://emm.dev.chnm.gmu.edu"
-      hugo-prod-url: "https://emm.rrchnm.org"
+      hugo-prod-url: "https://emm.dev.chnm.gmu.edu"
+
+      # The Dockerfile serves the built site from Caddy's /srv (not nginx's
+      # /usr/share/nginx/html/), so the reusable workflow must extract from /srv.
+      hugo-content-path: "/srv/"
 
       build-artifact-name: "emm-website"
       release-tag-name-type: "iso"
+      tag-prefix: "emm-"
 
-      website-devl-fqdn: "emm.dev.chnm.gmu.edu"
-      website-prod-fqdn: "emm.dev.chnm.gmu.edu"
-
-  deploy:
-    uses: chnm/.github/.github/workflows/docker--deploy.yml@main
-    needs: [build-release]
-    secrets: inherit
-    with:
       website-devl-fqdn: "emm.dev.chnm.gmu.edu"
       website-prod-fqdn: "emm.dev.chnm.gmu.edu"

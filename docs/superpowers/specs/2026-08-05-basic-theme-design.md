@@ -11,22 +11,23 @@ top of the existing structure.
 
 ## Direction
 
-Map/archival inspired: parchment and ink, drawn from the site's own assets —
-the `hero.jpg` (a 1651 map of "Ould Virginia") and the black ink-line
-`emm-logo.svg`. Not costume-y "old-timey" styling — a clean, text-first,
-academic layout with warm paper tones and one historically-appropriate
-display typeface.
+Map/archival inspired: ink on a plain white page, drawn from the site's own
+assets — the `hero.jpg` (a 1651 map of "Ould Virginia") and the black
+ink-line `emm-logo.svg`. Not costume-y "old-timey" styling — a clean,
+text-first, academic layout with a white background, warm ink/accent colors,
+and one historically-appropriate display typeface.
 
 ## Palette
 
-- Background: warm parchment, e.g. `#f4ecdc`
+- Background: white (`#ffffff`) — the parchment tone is dropped in favor of a
+  plain white page background
 - Body text ("ink"): warm near-black, e.g. `#241f1a` (not pure black)
 - Accent (links, small details): muted oxblood/rust, e.g. `#8a3a2b`
 - Rules/borders: soft sepia-brown, not gray
 
 Exact hex values may be refined slightly during implementation for contrast
-(WCAG AA against parchment background), but should stay within this warm
-parchment/ink/oxblood family.
+(WCAG AA against white background), but ink and accent colors should stay
+within this warm ink/oxblood family.
 
 ## Typography
 

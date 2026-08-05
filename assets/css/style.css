@@ -137,3 +137,15 @@ footer p { margin: 0 0 0.5rem; }
   border: 1px solid var(--color-rule);
   width: 100%;
 }
+
+.footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.footer-logos img {
+  height: 40px;
+  width: auto;
+}

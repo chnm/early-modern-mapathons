@@ -689,3 +689,90 @@ With the dev server running, navigate to `http://localhost:1313/` (or any page �
 git add static/images/gmu-logo.png static/images/rrchnm-logo.png layouts/partials/footer.html assets/css/style.css
 git commit -m "Add GMU and RRCHNM logos to the footer"
 ```
+
+---
+
+### Task 9: Footer partner logos (Virginia Tech, 4-VA)
+
+Added mid-implementation, right after Task 8: the user asked for two more institutional logos in the footer — Virginia Tech and 4-VA (the grant program funding the project, per `content/_index.md`'s "supported by a Virginia 4-VA grant") — sourced from URLs the user provided. With 4 logos now in one row, `.footer-logos` also needs `flex-wrap` so it doesn't overflow on narrow viewports.
+
+**Files:**
+- Create: `static/images/4-va-logo.svg`
+- Create: `static/images/vt-logo.png`
+- Modify: `layouts/partials/footer.html`
+- Modify: `assets/css/style.css` (the existing `.footer-logos` rule from Task 8 gains one property — this is the one CSS edit in the whole plan that isn't a pure append)
+
+**Interfaces:**
+- Consumes: the `.footer-logos` / `.footer-logos img` rules from Task 8.
+- Produces: none consumed later.
+
+- [ ] **Step 1: Download and prepare the two logo files**
+
+The Virginia Tech source URL serves a WebP image despite its `.png`-looking filename — convert it to a true PNG so it matches the other footer logos' format:
+
+```bash
+curl -sL "https://p.kagi.com/proxy/4-va-logo-final.svg?c=Em_yfUS9HEEB6vElAuHaNURLXfgVbnO07wp8kjj8Y4U3IZydMApVCbUVFPXPEKwWOtI2UHEYaqJJ3fmSwC9Los9-YBSTxvnSlDuNY1S5qyVfsd24DMfmwzcuPp8zzAnZ5gN6wNJqpJmHTnYRqw1kXA%3D%3D" -o static/images/4-va-logo.svg
+curl -sL "https://p.kagi.com/proxy/3840px-Virginia_Tech_logo.svg.png?c=9cn5Kxse4yD05EJkf6QML9dK4clUbdQ9Oq4d5gDoyHBwiX43u0CCAEVi8DMCHFAXjJZTma46O1sVILX0dlbOJn_bbWWtEVTqTkELa8Ar1VVF23yMF_dAA6lJHZo5LGYyn8vIG8fNTEgscwxfSpA3UQQkZ9aZ7QORCRzmAzDmnzc%3D" -o /tmp/vt-logo-raw
+sips -s format png /tmp/vt-logo-raw --out static/images/vt-logo.png
+rm /tmp/vt-logo-raw
+```
+
+- [ ] **Step 2: Verify the downloads**
+
+Run: `file static/images/4-va-logo.svg static/images/vt-logo.png`
+Expected: the first reports `SVG Scalable Vector Graphics image`, the second reports `PNG image data` (not `Web/P image` — that would mean the `sips` conversion step was skipped).
+
+- [ ] **Step 3: Add the two logos to `layouts/partials/footer.html`**
+
+Read the file first — Task 8 left it with a `<p class="footer-logos">` block containing the GMU and RRCHNM logos. Replace that block (matching the site's existing prose order — "George Mason University and Virginia Tech ... 4-VA grant ... RRCHNM") with:
+
+```html
+  <p class="footer-logos">
+    <a href="https://www.gmu.edu"><img src="/images/gmu-logo.png" alt="George Mason University"></a>
+    <a href="https://www.vt.edu"><img src="/images/vt-logo.png" alt="Virginia Tech"></a>
+    <a href="https://4-va.org"><img src="/images/4-va-logo.svg" alt="4-VA"></a>
+    <a href="https://rrchnm.org"><img src="/images/rrchnm-logo.png" alt="Roy Rosenzweig Center for History and New Media"></a>
+  </p>
+```
+
+- [ ] **Step 4: Add `flex-wrap` to the existing `.footer-logos` rule in `assets/css/style.css`**
+
+Find the `.footer-logos` rule added in Task 8:
+
+```css
+.footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+```
+
+Add one property so 4 logos wrap on narrow viewports instead of overflowing:
+
+```css
+.footer-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+```
+
+Do not touch the `.footer-logos img` rule below it — it already applies to all four images.
+
+- [ ] **Step 5: Build check**
+
+Run: `hugo`. Expected: exit code 0, no `ERROR` lines. Confirm `public/images/4-va-logo.svg` and `public/images/vt-logo.png` exist.
+
+- [ ] **Step 6: Visual check**
+
+With the dev server running, navigate to `http://localhost:1313/` and confirm via `read_page`: all 4 logos render as links with correct hrefs (gmu.edu, vt.edu, 4-va.org, rrchnm.org) in that order, each ~40px tall. Then `resize_window` to `mobile` (375×812) and confirm the row wraps to two lines instead of overflowing horizontally (`document.body.scrollWidth` should equal `375`, not exceed it).
+
+- [ ] **Step 7: Commit**
+
+```bash
+git add static/images/4-va-logo.svg static/images/vt-logo.png layouts/partials/footer.html assets/css/style.css
+git commit -m "Add Virginia Tech and 4-VA logos to the footer"
+```

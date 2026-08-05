@@ -128,3 +128,12 @@ footer {
 
 footer nav { margin-bottom: 1rem; }
 footer p { margin: 0 0 0.5rem; }
+
+.home main > p:first-child {
+  margin: 0 0 2.5rem;
+}
+
+.home main > p:first-child img {
+  border: 1px solid var(--color-rule);
+  width: 100%;
+}

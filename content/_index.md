@@ -3,32 +3,42 @@ title: "Early Modern Mapathons"
 description: "Team-based GIS training and transformation of seventeenth-century maps, a 4-VA project of George Mason University and Virginia Tech."
 ---
 
-![Early Modern Mapathons](/images/hero.jpg)
+{{< home-hero src="/images/hero.jpg" alt="Detail from a seventeenth-century map of Virginia and the Chesapeake Bay" >}}
 
+{{< home-section class="home-goals" >}}
 ## Our Goals
 
 Piloting a model for the crowd-sourced creation of an authoritative and accessible
 repository of historical layers for GIS at George Mason and Virginia Tech
 Universities in 2024–2025, with the support of a Virginia 4-VA Grant.
 
+{{< goal-grid >}}
+{{< goal-card >}}
 ### Orientating
 
 Meaningful early modern visualization and spatial research is currently hampered by
 the lack of accessible, authoritative layers representing historical data such as
 settlements, road networks, political boundaries, and altered coastlines and
 waterways.
+{{< /goal-card >}}
 
+{{< goal-card >}}
 ### Transforming
 
 We will bring Virginia researchers and students together for historical GIS training
 at two Mapathon events hosted during the Spring Semester 2025 at GMU and Virginia
 Tech.
+{{< /goal-card >}}
 
+{{< goal-card >}}
 ### Sharing
 
 The results will be published on ArcGIS Online under CC BY-NC-SA 4.0 and support
 project PIs in their NEH-funded research projects on historical travel
 infrastructure, violence and mortality, and unfree labor.
+{{< /goal-card >}}
+{{< /goal-grid >}}
+{{< /home-section >}}
 
 ## Project Organizers and Affiliates
 
@@ -60,6 +70,7 @@ mathematics, plague, and cryptography in early modern England.
 
 {{< /team >}}
 
+{{< home-section class="home-updates" >}}
 ## Updates
 
 Announcements and upcoming events, plus new tutorials and reflections:
@@ -69,8 +80,11 @@ Announcements and upcoming events, plus new tutorials and reflections:
 - [Tutorials](/tutorials/) — GIS, QGIS, and historic-map how-tos
 - [Resources](/gis-teaching-learning-resources/) — GIS teaching and learning resources
 - [Mapping Projects](/explore-early-modern-mapping-projects/) — explore early modern mapping projects
+{{< /home-section >}}
 
+{{< home-section class="home-cta" >}}
 ## Want to Get Involved?
 
 Interested in taking part in a mapathon, leading a team, or learning more about the
 project? Get in touch: [chnm@gmu.edu](mailto:chnm@gmu.edu).
+{{< /home-section >}}

@@ -32,56 +32,33 @@ infrastructure, violence and mortality, and unfree labor.
 
 ## Project Organizers and Affiliates
 
-### Dr. Rachel Midura
+{{< team >}}
 
-*Virginia Tech*
-
-![Dr. Rachel Midura](/images/team/midura.jpg)
-
+{{< team-member name="Dr. Rachel Midura" affiliation="Virginia Tech" image="/images/team/midura.jpg" links="Website|https://rachelmidura.com, Academia.edu|https://vt.academia.edu/RachelMidura, Bluesky|https://bsky.app/profile/rmidura.bsky.social" >}}
 Assistant Professor of Digital and Early Modern European history. Her research areas
 include the history of travel, diplomacy, espionage, and information/communication in
 early modern Italy and the Habsburg Empire.
+{{< /team-member >}}
 
-[Website](https://rachelmidura.com) ·
-[Academia.edu](https://vt.academia.edu/RachelMidura) ·
-[Bluesky](https://bsky.app/profile/rmidura.bsky.social)
-
-### Dr. Amanda Madden
-
-*George Mason University*
-
-![Dr. Amanda Madden](/images/team/madden.jpg)
-
+{{< team-member name="Dr. Amanda Madden" affiliation="George Mason University" image="/images/team/madden.jpg" links="Bluesky|https://bsky.app/profile/amandamadden.bsky.social" >}}
 Assistant Professor of History and Affiliate Faculty at the Roy Rosenzweig Center for
 History and New Media (RRCHNM). Her research areas include digital spatial history,
 digital humanities, early modern Italy, the history of crime and violence, the history
 of women and gender, and the scholarship of teaching and learning.
+{{< /team-member >}}
 
-[Bluesky](https://bsky.app/profile/amandamadden.bsky.social)
-
-### Dr. Jessica Taylor
-
-*Virginia Tech*
-
-![Dr. Jessica Taylor](/images/team/taylor.jpg)
-
+{{< team-member name="Dr. Jessica Taylor" affiliation="Virginia Tech" image="/images/team/taylor.jpg" links="Website|https://www.jessicaltaylor.com/" >}}
 Associate Professor of Oral and Public History. Her research interests include early
 American history, historic preservation, and native American history.
+{{< /team-member >}}
 
-[Website](https://www.jessicaltaylor.com/)
-
-### Dr. Jessica Otis
-
-*George Mason University*
-
-![Dr. Jessica Otis](/images/team/otis.jpg)
-
+{{< team-member name="Dr. Jessica Otis" affiliation="George Mason University" image="/images/team/otis.jpg" links="Website|https://jessicaotis.com/, Bluesky|https://bsky.app/profile/jmotis.bsky.social" >}}
 Assistant Professor of History and the Director of Public Projects at the Roy
 Rosenzweig Center for History and New Media. Her research interests include
 mathematics, plague, and cryptography in early modern England.
+{{< /team-member >}}
 
-[Website](https://jessicaotis.com/) ·
-[Bluesky](https://bsky.app/profile/jmotis.bsky.social)
+{{< /team >}}
 
 ## Updates
 

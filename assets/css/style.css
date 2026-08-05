@@ -149,3 +149,31 @@ footer p { margin: 0 0 0.5rem; }
   height: 40px;
   width: auto;
 }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.team-card__photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid var(--color-rule);
+  margin-bottom: 0.75rem;
+}
+
+.team-card__name { margin: 0 0 0.15rem; font-size: 1.25rem; }
+
+.team-card__affiliation {
+  margin: 0 0 0.5rem;
+  font-style: italic;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.team-card__bio p { font-size: 1rem; margin: 0 0 0.75rem; }
+
+.team-card__links { font-size: 0.9rem; margin: 0; }

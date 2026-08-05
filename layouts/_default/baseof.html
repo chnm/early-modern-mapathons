@@ -2,8 +2,9 @@
 <html lang="en-us">
 {{ partial "head.html" . }}
 <body{{ if .IsHome }} class="home"{{ end }}>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   {{ partial "header.html" . }}
-  <main>
+  <main id="main-content">
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}

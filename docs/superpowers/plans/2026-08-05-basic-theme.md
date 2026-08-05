@@ -34,6 +34,8 @@
 - Create: `layouts/shortcodes/team-member.html` — single team-card shortcode.
 - Modify: `content/_index.md` — rewrite the "Project Organizers and Affiliates" section to use the two shortcodes above.
 - Create (dev-only, not committed to app code): `.claude/launch.json` — Hugo dev server config for the Browser preview tool, used for visual QA in Tasks 3–7.
+- Move: `gmu-logo.png`, `rrchnm-logo.png` (dropped at repo root by the user mid-implementation) → `static/images/gmu-logo.png`, `static/images/rrchnm-logo.png` — added in Task 8.
+- Modify: `layouts/partials/footer.html` — add the two logos, linked, below the attribution paragraph. Added in Task 8.
 
 ## Global Verification Method
 
@@ -598,3 +600,92 @@ git commit -m "Fix QA findings from full-site theme pass"
 ```
 
 If no defects were found, skip this step — there's nothing to commit.
+
+---
+
+### Task 8: Footer partner logos (GMU, RRCHNM)
+
+Added mid-implementation: the user dropped `gmu-logo.png` and `rrchnm-logo.png` at the repo root and asked for them in the footer, linked to the respective institution sites, placed below the existing attribution paragraph.
+
+**Files:**
+- Move: `gmu-logo.png` → `static/images/gmu-logo.png`
+- Move: `rrchnm-logo.png` → `static/images/rrchnm-logo.png`
+- Modify: `layouts/partials/footer.html`
+- Modify: `assets/css/style.css` (append)
+
+**Interfaces:**
+- Consumes: none from earlier tasks beyond the existing `footer` CSS from Task 3 (this task adds a new `.footer-logos` class, since this is new content, not just styling of existing markup).
+- Produces: none consumed later.
+
+- [ ] **Step 1: Move the logo files into `static/images/`**
+
+```bash
+mkdir -p static/images
+git mv gmu-logo.png static/images/gmu-logo.png
+git mv rrchnm-logo.png static/images/rrchnm-logo.png
+```
+
+(If `git mv` fails because the files aren't yet tracked, use `mv` instead and `git add` both destination paths in the commit step.)
+
+- [ ] **Step 2: Add the logos to `layouts/partials/footer.html`**
+
+Read the file first. The current file is:
+
+```html
+<hr>
+<footer>
+  <nav aria-label="Footer navigation">
+    <ul>
+      {{ range .Site.Menus.main }}<li><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
+    </ul>
+  </nav>
+  <p>Contact: <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+  <p>
+    Early Modern Mapathons is a project of George Mason University and Virginia Tech,
+    supported by a Virginia 4-VA grant, in affiliation with the
+    <a href="https://rrchnm.org/">Roy Rosenzweig Center for History and New Media</a>.
+    Results are shared under a
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license.
+  </p>
+</footer>
+```
+
+Add a new `<p class="footer-logos">` immediately after the existing attribution `<p>...</p>`, before `</footer>`:
+
+```html
+  <p class="footer-logos">
+    <a href="https://www.gmu.edu"><img src="/images/gmu-logo.png" alt="George Mason University"></a>
+    <a href="https://rrchnm.org"><img src="/images/rrchnm-logo.png" alt="Roy Rosenzweig Center for History and New Media"></a>
+  </p>
+```
+
+- [ ] **Step 3: Append footer-logo CSS to `assets/css/style.css`**
+
+```css
+.footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.footer-logos img {
+  height: 40px;
+  width: auto;
+}
+```
+
+- [ ] **Step 4: Build check**
+
+Run: `hugo`. Expected: exit code 0, no `ERROR` lines. Confirm the images copied into `public/images/`: `ls public/images/gmu-logo.png public/images/rrchnm-logo.png`.
+
+- [ ] **Step 5: Visual check**
+
+With the dev server running, navigate to `http://localhost:1313/` (or any page — the footer is site-wide) and confirm: both logos render side by side below the attribution paragraph, each at 40px height with proportional width, and each is a working link (`href` present, pointing to `https://www.gmu.edu` and `https://rrchnm.org` respectively — confirm via `read_page` rather than clicking through).
+
+- [ ] **Step 6: Commit**
+
+```bash
+git add static/images/gmu-logo.png static/images/rrchnm-logo.png layouts/partials/footer.html assets/css/style.css
+git commit -m "Add GMU and RRCHNM logos to the footer"
+```

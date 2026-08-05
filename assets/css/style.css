@@ -78,3 +78,53 @@ hr {
   max-width: var(--measure);
   margin: 0 auto;
 }
+
+header {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 1.5rem;
+}
+
+header img { width: 120px; }
+
+header p {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  margin: 0.75rem 0 1.25rem;
+}
+
+header nav ul,
+footer nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a,
+footer nav a {
+  text-decoration: none;
+  color: var(--color-ink);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+header nav a:hover,
+footer nav a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+footer {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 3rem;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+footer nav { margin-bottom: 1rem; }
+footer p { margin: 0 0 0.5rem; }

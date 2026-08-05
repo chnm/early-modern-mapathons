@@ -9,3 +9,6 @@
 # OS / editor
 .DS_Store
 *.swp
+
+# superpowers SDD scratch workspaces
+.superpowers/

@@ -11,4 +11,5 @@
 *.swp
 
 # superpowers SDD scratch workspaces
+docs/superpowers/
 .superpowers/

@@ -44,9 +44,15 @@ jobs:
       # /usr/share/nginx/html/), so the reusable workflow must extract from /srv.
       hugo-content-path: "/srv/"
 
-      build-artifact-name: "emm-website"
       release-tag-name-type: "iso"
-      tag-prefix: "emm-"
+
+      # build-artifact-name and tag-prefix are both intentionally unset, so
+      # this repo takes the shared defaults: the release asset is
+      # hugo-build.tar.gz, tagged "hugo-build-main-<ts>" on main and
+      # "hugo-build-devl-<ts>" on every other ref. Releases are repo-scoped and
+      # the playbook resolves the repo from the target FQDN, so nothing in the
+      # release needs to name this site. Set both again if this repo ever
+      # releases a SECOND artifact — they would otherwise be indistinguishable.
 
       website-devl-fqdn: "emm.dev.chnm.gmu.edu"
       website-prod-fqdn: "emm.dev.chnm.gmu.edu"

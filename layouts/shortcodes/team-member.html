@@ -1,0 +1,18 @@
+<div class="team-card">
+  {{ with .Get "image" }}<img src="{{ . }}" alt="{{ $.Get "name" }}" class="team-card__photo">{{ end }}
+  <h3 class="team-card__name">{{ .Get "name" }}</h3>
+  {{ with .Get "affiliation" }}<p class="team-card__affiliation">{{ . }}</p>{{ end }}
+  <div class="team-card__bio">
+    {{ .Inner | markdownify }}
+  </div>
+  {{ with .Get "links" }}
+  <p class="team-card__links">
+    {{ $links := strings.Split . "," }}
+    {{ range $i, $link := $links }}
+      {{ $trimmed := strings.TrimSpace $link }}
+      {{ $parts := strings.Split $trimmed "|" }}
+      {{ if eq (len $parts) 2 }}{{ if $i }} &middot; {{ end }}<a href="{{ index $parts 1 }}">{{ index $parts 0 }}</a>{{ end }}
+    {{ end }}
+  </p>
+  {{ end }}
+</div>

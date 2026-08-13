@@ -1,16 +1,27 @@
-<hr>
-<footer>
-  <nav aria-label="Footer navigation">
-    <ul>
-      {{ range .Site.Menus.main }}<li><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
-    </ul>
-  </nav>
-  <p>Contact: <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
-  <p>
-    Early Modern Mapathons is a project of George Mason University and Virginia Tech,
-    supported by a Virginia 4-VA grant, in affiliation with the
-    <a href="https://rrchnm.org/">Roy Rosenzweig Center for History and New Media</a>.
-    Results are shared under a
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license.
-  </p>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__summary">
+      <p class="site-footer__title">{{ .Site.Title }}</p>
+      <p>
+        A collaborative project of George Mason University and Virginia Tech,
+        supported by a Virginia 4-VA grant and affiliated with the
+        <a href="https://rrchnm.org/">Roy Rosenzweig Center for History and New Media</a>.
+      </p>
+      <p>Contact <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a> &middot; <a href="https://rrchnm.org/accessibility/">Accessibility</a></p>
+    </div>
+    <div class="site-footer__links">
+      <nav aria-label="Footer navigation">
+        <ul>
+          {{ range .Site.Menus.main }}<li><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
+        </ul>
+      </nav>
+      <p>Project materials are shared under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license.</p>
+    </div>
+  </div>
+  <div class="footer-logos" aria-label="Project partners">
+    <a href="https://www.gmu.edu"><img src="/images/gmu-logo.png" alt="George Mason University"></a>
+    <a href="https://www.vt.edu"><img src="/images/vt-logo.png" alt="Virginia Tech"></a>
+    <a href="https://4-va.org"><img src="/images/4-va-logo.svg" alt="4-VA"></a>
+    <a href="https://rrchnm.org"><img src="/images/rrchnm-logo.png" alt="Roy Rosenzweig Center for History and New Media"></a>
+  </div>
 </footer>

@@ -2,9 +2,9 @@
 <article>
   <h1>{{ .Title }}</h1>
   {{ if not .Date.IsZero }}
-  <p>
+  <p class="article-meta">
     <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-    {{ with .Params.author }} &middot; {{ . }}{{ end }}
+    {{ with .Params.author }}<span>{{ . }}</span>{{ end }}
   </p>
   {{ end }}
   {{ .Content }}

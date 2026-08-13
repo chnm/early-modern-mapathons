@@ -3,74 +3,86 @@ title: "Early Modern Mapathons"
 description: "Team-based GIS training and transformation of seventeenth-century maps, a 4-VA project of George Mason University and Virginia Tech."
 ---
 
-{{< home-hero src="/images/hero.jpg" alt="Detail from a seventeenth-century map of Virginia and the Chesapeake Bay" >}}
+![Early Modern Mapathons](/images/hero.jpg)
 
-{{< home-section class="home-goals" >}}
 ## Our Goals
 
 Piloting a model for the crowd-sourced creation of an authoritative and accessible
 repository of historical layers for GIS at George Mason and Virginia Tech
 Universities in 2024–2025, with the support of a Virginia 4-VA Grant.
 
-{{< goal-grid >}}
-{{< goal-card >}}
 ### Orientating
 
 Meaningful early modern visualization and spatial research is currently hampered by
 the lack of accessible, authoritative layers representing historical data such as
 settlements, road networks, political boundaries, and altered coastlines and
 waterways.
-{{< /goal-card >}}
 
-{{< goal-card >}}
 ### Transforming
 
 We will bring Virginia researchers and students together for historical GIS training
 at two Mapathon events hosted during the Spring Semester 2025 at GMU and Virginia
 Tech.
-{{< /goal-card >}}
 
-{{< goal-card >}}
 ### Sharing
 
 The results will be published on ArcGIS Online under CC BY-NC-SA 4.0 and support
 project PIs in their NEH-funded research projects on historical travel
 infrastructure, violence and mortality, and unfree labor.
-{{< /goal-card >}}
-{{< /goal-grid >}}
-{{< /home-section >}}
 
 ## Project Organizers and Affiliates
 
-{{< team >}}
+### Dr. Rachel Midura
 
-{{< team-member name="Dr. Rachel Midura" affiliation="Virginia Tech" image="/images/team/midura.jpg" links="Website|https://rachelmidura.com, Academia.edu|https://vt.academia.edu/RachelMidura, Bluesky|https://bsky.app/profile/rmidura.bsky.social" >}}
+*Virginia Tech*
+
+![Dr. Rachel Midura](/images/team/midura.jpg)
+
 Assistant Professor of Digital and Early Modern European history. Her research areas
 include the history of travel, diplomacy, espionage, and information/communication in
 early modern Italy and the Habsburg Empire.
-{{< /team-member >}}
 
-{{< team-member name="Dr. Amanda Madden" affiliation="George Mason University" image="/images/team/madden.jpg" links="Bluesky|https://bsky.app/profile/amandamadden.bsky.social" >}}
+[Website](https://rachelmidura.com) ·
+[Academia.edu](https://vt.academia.edu/RachelMidura) ·
+[Bluesky](https://bsky.app/profile/rmidura.bsky.social)
+
+### Dr. Amanda Madden
+
+*George Mason University*
+
+![Dr. Amanda Madden](/images/team/madden.jpg)
+
 Assistant Professor of History and Affiliate Faculty at the Roy Rosenzweig Center for
 History and New Media (RRCHNM). Her research areas include digital spatial history,
 digital humanities, early modern Italy, the history of crime and violence, the history
 of women and gender, and the scholarship of teaching and learning.
-{{< /team-member >}}
 
-{{< team-member name="Dr. Jessica Taylor" affiliation="Virginia Tech" image="/images/team/taylor.jpg" links="Website|https://www.jessicaltaylor.com/" >}}
+[Bluesky](https://bsky.app/profile/amandamadden.bsky.social)
+
+### Dr. Jessica Taylor
+
+*Virginia Tech*
+
+![Dr. Jessica Taylor](/images/team/taylor.jpg)
+
 Associate Professor of Oral and Public History. Her research interests include early
 American history, historic preservation, and native American history.
-{{< /team-member >}}
 
-{{< team-member name="Dr. Jessica Otis" affiliation="George Mason University" image="/images/team/otis.jpg" links="Website|https://jessicaotis.com/, Bluesky|https://bsky.app/profile/jmotis.bsky.social" >}}
+[Website](https://www.jessicaltaylor.com/)
+
+### Dr. Jessica Otis
+
+*George Mason University*
+
+![Dr. Jessica Otis](/images/team/otis.jpg)
+
 Assistant Professor of History and the Director of Public Projects at the Roy
 Rosenzweig Center for History and New Media. Her research interests include
 mathematics, plague, and cryptography in early modern England.
-{{< /team-member >}}
 
-{{< /team >}}
+[Website](https://jessicaotis.com/) ·
+[Bluesky](https://bsky.app/profile/jmotis.bsky.social)
 
-{{< home-section class="home-updates" >}}
 ## Updates
 
 Announcements and upcoming events, plus new tutorials and reflections:
@@ -80,11 +92,8 @@ Announcements and upcoming events, plus new tutorials and reflections:
 - [Tutorials](/tutorials/) — GIS, QGIS, and historic-map how-tos
 - [Resources](/gis-teaching-learning-resources/) — GIS teaching and learning resources
 - [Mapping Projects](/explore-early-modern-mapping-projects/) — explore early modern mapping projects
-{{< /home-section >}}
 
-{{< home-section class="home-cta" >}}
 ## Want to Get Involved?
 
 Interested in taking part in a mapathon, leading a team, or learning more about the
 project? Get in touch: [chnm@gmu.edu](mailto:chnm@gmu.edu).
-{{< /home-section >}}

@@ -1,12 +1,18 @@
-<header>
-  <a href="/"><img src="/images/emm-logo.svg" alt="Early Modern Mapathons" width="240"></a>
-  <p>{{ .Site.Params.tagline }}</p>
+<header class="site-header">
+  <a class="site-brand" href="/" aria-label="{{ .Site.Title }} home">
+    <img src="/images/emm-logo.svg" alt="" width="80" height="80">
+    <span class="site-brand__text">
+      {{ if .IsHome }}<h1 class="site-title">{{ .Site.Title }}</h1>{{ else }}<span class="site-title">{{ .Site.Title }}</span>{{ end }}
+      <span class="site-tagline">{{ .Site.Params.tagline }}</span>
+    </span>
+  </a>
   <nav aria-label="Main navigation">
     <ul>
+      {{ $page := . }}
       {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ $isCurrent := or (eq $page.RelPermalink .URL) (and (ne .URL "/") (hasPrefix $page.RelPermalink .URL)) }}
+      <li><a href="{{ .URL }}"{{ if $isCurrent }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
       {{ end }}
     </ul>
   </nav>
 </header>
-<hr>

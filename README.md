@@ -27,7 +27,6 @@ hugo                 # one-off build into ./public/
 hugo.toml                 # site config: baseURL, menu, params (incl. contact email)
 content/
   _index.md                             # home page (goals, organizers, updates, get involved)
-  mapathon-events.md                    # /mapathon-events/  (standalone page)
   gis-teaching-learning-resources.md    # /gis-teaching-learning-resources/  (standalone "Resources" page)
   explore-early-modern-mapping-projects.md  # /explore-early-modern-mapping-projects/  (standalone "Mapping Projects" page)
   tutorials/              # /tutorials/  (4 tutorial posts)

@@ -75,7 +75,6 @@ mathematics, plague, and cryptography in early modern England.
 
 Announcements and upcoming events, plus new tutorials and reflections:
 
-- [Mapathon Events](/mapathon-events/) — recruiting participants for Spring 2025
 - [Announcements](/announcements/) — info sessions and upcoming events
 - [Tutorials](/tutorials/) — GIS, QGIS, and historic-map how-tos
 - [Resources](/gis-teaching-learning-resources/) — GIS teaching and learning resources

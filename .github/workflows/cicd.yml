@@ -38,7 +38,7 @@ jobs:
       # so the build context is the repository root.
       hugo-context-root: "."
       hugo-devl-url: "https://emm.dev.chnm.gmu.edu"
-      hugo-prod-url: "https://emm.dev.chnm.gmu.edu"
+      hugo-prod-url: "https://emm.rrchnm.org"
 
       # The Dockerfile serves the built site from Caddy's /srv (not nginx's
       # /usr/share/nginx/html/), so the reusable workflow must extract from /srv.
@@ -55,4 +55,4 @@ jobs:
       # releases a SECOND artifact — they would otherwise be indistinguishable.
 
       website-devl-fqdn: "emm.dev.chnm.gmu.edu"
-      website-prod-fqdn: "emm.dev.chnm.gmu.edu"
+      website-prod-fqdn: "emm.rrchnm.org"

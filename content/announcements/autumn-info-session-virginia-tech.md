@@ -18,4 +18,4 @@ Athenaeum
 Pizza will be served  
 Zoom link available on request
 
-![](/images/announcements/info-session-poster.jpg)
+![Early Modern Mapathons info session poster with a vintage map background, sea-monster illustrations, and a QR code linking to the project website](/images/announcements/info-session-poster.jpg)

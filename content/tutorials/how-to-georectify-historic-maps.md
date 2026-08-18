@@ -8,37 +8,37 @@ aliases:
   - "/2026/04/12/how-to-georectify-historic-maps-tutorial/"
 ---
 
-**How to Georectify Historic Maps in QGIS**
+## How to Georectify Historic Maps in QGIS
 
-  1. **Load the Historic Map**
+### 1. Load the Historic Map
      * Open QGIS.
      * Go to **Raster** > **Georeferencer**.
      * Click **Open Raster** and select your scanned historic map.
-  2. **Set the Coordinate Reference System (CRS)**
+### 2. Set the Coordinate Reference System (CRS)
      * Click **Settings** > **Transformation Settings**.
      * Choose a CRS that matches your project (e.g., EPSG:4326 for WGS 84).
-  3. **Add Control Points**
+### 3. Add Control Points
      * Click **Add Point** and select a known location on the historic map.
      * Enter the real-world coordinates (or click **From Map Canvas** to choose from an existing GIS layer).
      * Repeat for multiple control points across the map for accuracy.
-  4. **Set Transformation Parameters**
+### 4. Set Transformation Parameters
      * Choose a transformation method (e.g., **Thin Plate Spline** or **Polynomial 2**).
      * Set resampling method (e.g., **Nearest Neighbor**).
      * Choose an output location for the rectified map.
-  5. **Start Georeferencing**
+### 5. Start Georeferencing
      * Click **Start Georeferencing** to align the historic map with real-world coordinates.
      * Once completed, the georectified map will be added as a layer in QGIS.
-  6. **Adjust and Validate**
+### 6. Adjust and Validate
      * Adjust transparency in **Layer Properties** > **Transparency** to compare with the basemap.
      * Check alignment with known features.
 
-**How to Georectify Historic Maps Online**
+## How to Georectify Historic Maps Online
 
-**Map Warper**
+### Map Warper
 
 Go to [mapwarper.net](http://mapwarper.net).
 
-**Browse all maps**
+#### Browse All Maps
 
 1. To browse a map that has already been uploaded and georectified on
    [mapwarper.net](http://mapwarper.net), click the **Browse All Maps** tab at the top
@@ -46,7 +46,7 @@ Go to [mapwarper.net](http://mapwarper.net).
 2. In the search box, set your parameters – location and year.
 3. Browse search results to find a georectified map.
 
-**Upload a map**
+#### Upload a Map
 
 1. To upload a map, sign up for a map warper account or log into your existing account.
 2. Click the 'Upload Map' tab on the top menu bar.

@@ -51,6 +51,7 @@ body {
   font-size: 1.0625rem;
   line-height: 1.7;
   text-rendering: optimizeLegibility;
+  overflow-wrap: anywhere;
 }
 
 ::selection {
@@ -129,7 +130,7 @@ a:hover {
 }
 
 a:focus-visible {
-  outline: 3px solid rgb(133 53 38 / 0.28);
+  outline: 3px solid var(--color-accent);
   outline-offset: 4px;
   border-radius: 1px;
 }
@@ -274,10 +275,14 @@ th {
   flex: 0 0 auto;
 }
 
-.site-header nav a {
-  position: relative;
+.site-header nav a,
+.site-footer nav a {
   display: inline-block;
   padding: 0.5rem 0;
+}
+
+.site-header nav a {
+  position: relative;
 }
 
 .site-header nav a::after {

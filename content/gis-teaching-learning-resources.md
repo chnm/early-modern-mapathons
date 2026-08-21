@@ -9,7 +9,7 @@ aliases:
 
 Use this guide for further reading and finding resources to both teach GIS and learn more about GIS. The guide is divided into ‘General GIS Resources,’ ‘QGIS Resources,’ and ‘ArcGIS Resources.’
 
-**General GIS Resources**
+## General GIS Resources
 
 University Resources/Lib Guides
 
@@ -22,7 +22,7 @@ University Resources/Lib Guides
     * [InfoGuide: Humanities GIS](https://infoguides.gmu.edu/geohumanities/data)
     * [Resources for Spatial Humanities](https://lincolnmullen.com/projects/spatial-workshop/resources.html)
 
-**QGIS Resources**
+## QGIS Resources
 
 QGIS Documentation
 
@@ -67,7 +67,7 @@ Online Resources
   * Coursera
     * [GIS Courses – Free Trials of Tutorials from Various Institutions](https://www.coursera.org/courses?query=gis&irclickid=ximRQrRMCxyKTVDVagUM%3Ay2UUkpx4u11IzuYUw0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=3493413&utm_content=b2c&utm_campaignid=Matthew%20Forrest&utm_term=14726_CR_1164545_)
 
-**ArcGIS Resources**
+## ArcGIS Resources
 
 ESRI Tutorials
 

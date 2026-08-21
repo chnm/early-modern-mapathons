@@ -8,41 +8,41 @@ aliases:
   - "/2026/04/12/finding-historic-maps-online-tutorial/"
 ---
 
-**Where can I find historic maps for my project?**
+## Where Can I Find Historic Maps for My Project?
 
 Unless you can physically be in an archive and have permission to digitize a map yourself, the best place to find early modern maps is online. There are many online databases that contain digitized historic maps that you can download for free and are either in the public domain or may be used under creative commons license with attribution.*
 
 *Remember, it is your responsibility to verify that the source you are using is not under copyright, or to obtain permission to use the copyrighted material!
 
-  1. **David Rumsey Historical Map Collection**
+### David Rumsey Historical Map Collection
 
-[**https://www.davidrumsey.com/**](https://www.davidrumsey.com/)****
+[**https://www.davidrumsey.com/**](https://www.davidrumsey.com/)
 
 The David Rumsey Map Collection is an online database run by Stanford University. It contains over 142,000 digitized maps from around the world, ranging in date from 1550 to the present. You can search their database through the standard search bar at the top of the page, search by category, or use their ‘search by text-on-maps’ feature which locates maps by a keyword search of the text they contain (though this function is currently only available for maps that have already been georeferenced in their database).
 
-![](/images/tutorials/Screenshot-2025-10-21-172835.png)
+![David Rumsey Map Collection homepage with search tools and a browsable grid of historic maps](/images/tutorials/Screenshot-2025-10-21-172835.png)
 
-  2. **Old Maps Online**
+### Old Maps Online
 
-[**https://www.oldmapsonline.org/**](https://www.oldmapsonline.org/)****
+[**https://www.oldmapsonline.org/**](https://www.oldmapsonline.org/)
 
 Old Maps Online is a digital repository where you can search by zooming into a location on their world map projection and using the timeline slider to narrow down the search results to a specific year or era. Old Maps Online searches through multiple institutions at one time, so you’ll see an aggregate of maps from across the web in your search results.
 
-![](/images/tutorials/Screenshot-2025-10-21-173801.png)
+![Old Maps Online interactive map showing historical political boundaries around the year 1650, with a timeline slider and a results list of French maps](/images/tutorials/Screenshot-2025-10-21-173801.png)
 
-  3. **The Huntington Digital Library**
+### The Huntington Digital Library
 
-[**https://hdl.huntington.org/digital/collection/p15150coll4/search**](https://hdl.huntington.org/digital/collection/p15150coll4/search)****
+[**https://hdl.huntington.org/digital/collection/p15150coll4/search**](https://hdl.huntington.org/digital/collection/p15150coll4/search)
 
 The Huntington Digital Library has a collection of digitized world maps from 1695 to 1968. You can find digitized maps on the Huntington Digital Library in a few easy steps:
 
 First, in the left-hand sidebar, find the ‘Collections’ drop-down box and click on ‘Maps.’ From there, you can filter results through other metadata like ‘Creator,’ ‘Date,’ ‘Contributor,’ ‘Language,’ and ‘Subjects.’
 
-![](/images/tutorials/Screenshot-2025-12-12-170246.png)
+![Huntington Digital Library sidebar showing the Collections filter with 'Maps' selected and a list of Creator filter options](/images/tutorials/Screenshot-2025-12-12-170246.png)
 
 While many of the maps in the Huntington’s collection can be used through Creative Commons licenses, _it is your responsibility as the researcher to determine if there is a copyright on a digitized source you want to use, and to obtain permission to use it._
 
-  4. **National Libraries or National Archives**
+### National Libraries or National Archives
 
 Another option for finding digitized maps online is to go straight to official national or regional websites for the country you are researching. Some examples include:
 
@@ -60,13 +60,13 @@ In some cases, a country will have regional government archives. For example, It
 
 * * *
 
-**Types of Historic Maps: How do I determine if a map is right for my project?**
+## Types of Historic Maps: How Do I Determine if a Map Is Right for My Project?
 
 As you search for an early modern map online, you will encounter many different styles of maps. This is because map projections were not standardized in the early modern period, and cartographers had free reign over artistic style. This means that when you search through digitized maps, you need to look for specific attributes that make the map a good candidate for creating shapefiles.
 
-**Example 1: 1716 Map of Venice, Italy**
+### Example 1: 1716 Map of Venice, Italy
 
-![](/images/tutorials/Screenshot-2025-11-10-141754.png)
+![1716 aerial-view map of Venice titled 'Venetia,' with clearly outlined, color-coded city districts and streets, and a panoramic waterfront view along the bottom](/images/tutorials/Screenshot-2025-11-10-141754.png)
 
 “Venetia.” https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~305895~90076280:Venetia-.
 
@@ -79,9 +79,9 @@ Elements that make this 1716 map good for creating GIS shapefiles.
   * Well-defined Shapes 
     * This 1716 map has a clear grid, and well-defined lines that make is easy to create shapefiles on top of. Notice that the buildings are not 3D. Instead they are represented by 2D shapes that have clear lines and closed boundaries.
 
-**Example 2: 1575 Map of Venice**
+### Example 2: 1575 Map of Venice
 
-![](/images/tutorials/Screenshot-2025-11-10-142015.png)
+![1575 bird's-eye view map of Venice titled 'Venetia,' drawn in an axonometric perspective with buildings shown at an angle rather than flat, surrounded by ships in the lagoon](/images/tutorials/Screenshot-2025-11-10-142015.png)
 
 “Vol I (43) Venetia (Venice).” https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~286822~90059073:Vol-I–43–Venetia–Venice–.
 
@@ -93,15 +93,15 @@ Axonometric projections are artistically and stylistically interesting, but don�
 
 * * *
 
-**What do I do if I can’t find an early modern map for my project?**
+## What Do I Do if I Can’t Find an Early Modern Map for My Project?
 
 Sometimes it is not possible to locate an appropriate, well-preserved, and well-digitized historic map. In those cases, don’t give up! There are a few options for the map-less early modern historian. 
 
-  1. **19****th****Century Travel Guides**
+### 19th-Century Travel Guides
 
 In the 19th century, travel guides were a popular way to learn about places around the world. Often, people would document their experiences and the sites and cities they saw on their journeys, which were then printed for public consumption (think of it like an old-school travel blog). Many 19th century travel guides have been digitized and can be found through various online primary source databases that can be accessed through your university library or a personal account. 
 
-  2. **Official Tourism City Guides**
+### Official Tourism City Guides
 
 Modern city guides can be found on many official websites for tourism boards and state/regional/city governments. City guides offer highlights for tourists, which almost always includes historic buildings, churches, palaces, parks, etc. Take the city of Modena, Italy for example which has [ _La Guida di Modena, a_](https://laguidadimodena.it/en/home) n online guide to the city of Modena that lists historic sites, their descriptions, and their locations.
 
@@ -111,7 +111,7 @@ This method is effective, but time consuming, and you should be aware that your 
 
 * * *
 
-**Other Resources/Further Reading:**
+## Other Resources/Further Reading
 
 [Cornell Library Guide – Digital Map Libraries](https://guides.library.cornell.edu/historicmapsonline)
 

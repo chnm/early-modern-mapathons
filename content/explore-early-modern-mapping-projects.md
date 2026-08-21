@@ -9,12 +9,12 @@ aliases:
 
 **Early Modern Mapping Projects – Reference List**
 
-**Visualizations**
+## Visualizations
 
   * [Death by Numbers ](https://deathbynumbers.org/visualizations/)
     * DataScribe, Tropy, Omeka, data-driven historical research, GIS, data visualizations, London 
 
-**GIS**
+## GIS
 
   * [Decima ](https://decima-map.net/the-project/)
     * GIS, census data, population data, Florence, georectified historic map
@@ -33,19 +33,19 @@ aliases:
   * [The Map of Early Modern London (MoEML) ](https://mapoflondon.uvic.ca/index.htm)
     * GUI – Graphical user interface, early modern London
 
-**StoryMap**
+## StoryMap
 
   * [Incunabula: The Art & History of Printing in Western Europe, c. 1450-1500](https://www.loc.gov/ghe/cascade/index.html?appid=580edae150234258a49a3eeb58d9121c)
     * ArcGIS StoryMap, map visualization, interactive map
 
-**Network Analysis**
+## Network Analysis
 
   * [Early Modern Digital Itineraries (EMDigIt)](https://emdigit.org/2023/about-emdigit1/)
     * Network analysis, travel itineraries, palladio, python, transkribus
   * [Mapping the Republic of Letters](http://republicofletters.stanford.edu/)
     * Network analysis, visualizations
 
-**Publications/Datasets**
+## Publications/Datasets
 
   * [Historical Atlas of the Low Countries (1350-1800) ](https://datasets.iisg.amsterdam/dataset.xhtml?persistentId=hdl:10622/PGFYTM)
     * Dataset, geopkg files for download, the Netherlands, spatial features
